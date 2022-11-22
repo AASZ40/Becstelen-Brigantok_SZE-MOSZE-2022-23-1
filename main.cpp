@@ -133,6 +133,8 @@ public:
 
 
     void getNextPlace() {
+
+        cout << "A(igen), B(nem)" << endl;
         string input;
       
         getline(cin, input);
@@ -178,8 +180,13 @@ public:
  };
 
 int main() {
+    Fajlkezeles file;
+    Dontes dontes;
 
-    
+    file.file1();
+    dontes.getNextPlace();
+
+    return 0;
     
         /*string line;
         //string dontes;
@@ -188,7 +195,7 @@ int main() {
 
      
 
-        /*string getStory();
+        /*
             ifstream file("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/bevezeto.txt");
             if (file.is_open()) {
                 while (getline(file, line)) {
