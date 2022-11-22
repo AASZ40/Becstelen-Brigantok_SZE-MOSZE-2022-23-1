@@ -19,7 +19,7 @@ public:
 
 };*/
 
-class Fajlkezeles {
+class Fajlkezeles{
 public:
     string line;
     string A = "IGEN";
@@ -34,6 +34,8 @@ public:
 
             file1.close();
         }
+
+        
         
 
     }
@@ -47,7 +49,8 @@ public:
 
 
             file2.close();
-        };
+        }
+        
     }
 
     void file3() {
@@ -59,7 +62,8 @@ public:
 
 
             file3.close();
-        };
+        }
+        
     }
 
     void file4() {
@@ -71,7 +75,8 @@ public:
 
 
             file4.close();
-        };
+        }
+        
     }
 
     void file5() {
@@ -83,7 +88,8 @@ public:
 
 
             file5.close();
-        };
+        }
+        
     }
 
     void file6() {
@@ -95,7 +101,8 @@ public:
 
 
             file6.close();
-        };
+        }
+        
     }
 
     void file7() {
@@ -107,7 +114,8 @@ public:
 
 
             file7.close();
-        };
+        }
+        
     }
 
     void file8() {
@@ -119,7 +127,8 @@ public:
 
 
             file8.close();
-        };
+        }
+        
     }
 
 };
@@ -128,9 +137,8 @@ public:
 
 
 
-class Dontes {
+class Dontes : public Fajlkezeles {
 public:
-
 
     void getNextPlace() {
 
@@ -142,38 +150,41 @@ public:
         cout << endl;
 
         while (input != "A" && input != "B") {
-        
-            cout << "Hibás bevitel, próbálja újra (A vagy B)!" << endl;
+
+            cout << "Hibas bevitel, probalja ujra (A vagy B)!" << endl;
 
             getline(cin, input);
 
             cout << endl;
+
         }
 
         if (input == "A" && &Fajlkezeles::file1) {
-            &Fajlkezeles::file2;
+                return file2();
+
         }
         else if (input == "B" && &Fajlkezeles::file1) {
-            &Fajlkezeles::file1;
+                return file1();
         }
         else if (input == "A" && &Fajlkezeles::file2) {
-            &Fajlkezeles::file3;
+                return file3();
         }
         else if (input == "B" && &Fajlkezeles::file2) {
-            &Fajlkezeles::file4;
+                return file4();
         }
         else if (input == "A" && &Fajlkezeles::file3) {
-            &Fajlkezeles::file5;
+                return file5();
         }
-        else if(input == "B" && &Fajlkezeles::file3) {
-            &Fajlkezeles::file6;
+        else if (input == "B" && &Fajlkezeles::file3) {
+                return file6();
         }
         else if (input == "A" && &Fajlkezeles::file4) {
-            &Fajlkezeles::file7;
+                return file7();
         }
         else if (input == "B" && &Fajlkezeles::file4) {
-            &Fajlkezeles::file8;
+                return file8();
         }
+        
         
     }
     
