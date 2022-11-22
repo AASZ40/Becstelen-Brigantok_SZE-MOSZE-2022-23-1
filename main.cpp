@@ -4,11 +4,11 @@
 
 using namespace std;
 
-class Kiir {
+/*class Kiir {
 public:
 
     void StoryOut() {
-
+        string story1(Fajlkezeles::file1)
     }
 
     void EventOut() {
@@ -17,7 +17,7 @@ public:
 
 
 
-};
+};*/
 
 class Fajlkezeles {
 public:
@@ -27,14 +27,14 @@ public:
 
     void file1() {
         ifstream file1("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/bevezeto.txt");
-        /*if (file1.is_open()) {
+        if (file1.is_open()) {
             while (getline(file1, line)) {
                 cout << line << '\n';
             }
 
-
             file1.close();
-        };*/
+        }
+        
 
     }
 
@@ -50,6 +50,78 @@ public:
         };
     }
 
+    void file3() {
+        ifstream file3("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/tabor1.txt");
+        if (file3.is_open()) {
+            while (getline(file3, line)) {
+                cout << line << '\n';
+            }
+
+
+            file3.close();
+        };
+    }
+
+    void file4() {
+        ifstream file4("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/elhagyatott_epulet1.txt");
+        if (file4.is_open()) {
+            while (getline(file4, line)) {
+                cout << line << '\n';
+            }
+
+
+            file4.close();
+        };
+    }
+
+    void file5() {
+        ifstream file5("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/sator1.txt");
+        if (file5.is_open()) {
+            while (getline(file5, line)) {
+                cout << line << '\n';
+            }
+
+
+            file5.close();
+        };
+    }
+
+    void file6() {
+        ifstream file6("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/orszagut1.txt");
+        if (file6.is_open()) {
+            while (getline(file6, line)) {
+                cout << line << '\n';
+            }
+
+
+            file6.close();
+        };
+    }
+
+    void file7() {
+        ifstream file7("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/hatso_kijarat.txt");
+        if (file7.is_open()) {
+            while (getline(file7, line)) {
+                cout << line << '\n';
+            }
+
+
+            file7.close();
+        };
+    }
+
+    void file8() {
+        ifstream file8("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/wc.txt");
+        if (file8.is_open()) {
+            while (getline(file8, line)) {
+                cout << line << '\n';
+            }
+
+
+            file8.close();
+        };
+    }
+
 };
 
 
@@ -58,23 +130,57 @@ public:
 
 class Dontes {
 public:
-    void dontes() {
+
+
+    void getNextPlace() {
         string input;
+      
         getline(cin, input);
 
         cout << endl;
 
-        if (input == "A") {
+        while (input != "A" && input != "B") {
+        
+            cout << "Hibás bevitel, próbálja újra (A vagy B)!" << endl;
 
-        }
-        else if (input == "B") {
+            getline(cin, input);
 
+            cout << endl;
         }
+
+        if (input == "A" && &Fajlkezeles::file1) {
+            &Fajlkezeles::file2;
+        }
+        else if (input == "B" && &Fajlkezeles::file1) {
+            &Fajlkezeles::file1;
+        }
+        else if (input == "A" && &Fajlkezeles::file2) {
+            &Fajlkezeles::file3;
+        }
+        else if (input == "B" && &Fajlkezeles::file2) {
+            &Fajlkezeles::file4;
+        }
+        else if (input == "A" && &Fajlkezeles::file3) {
+            &Fajlkezeles::file5;
+        }
+        else if(input == "B" && &Fajlkezeles::file3) {
+            &Fajlkezeles::file6;
+        }
+        else if (input == "A" && &Fajlkezeles::file4) {
+            &Fajlkezeles::file7;
+        }
+        else if (input == "B" && &Fajlkezeles::file4) {
+            &Fajlkezeles::file8;
+        }
+        
     }
     
  };
 
 int main() {
+
+    
+    
         /*string line;
         //string dontes;
         string A = "IGEN";
