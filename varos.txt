@@ -1,0 +1,4 @@
+Az út során egy városban találod magad. Ez a város a biztonságosabb karanténzóna széle. A tábor
+ahova el szeretnétek jutni a zónán kívül van. Döntést kell hoznod.
+
+Kilépsz a karantén zónán kívülre?
