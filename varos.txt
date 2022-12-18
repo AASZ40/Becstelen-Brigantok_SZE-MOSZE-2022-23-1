@@ -1,4 +1,4 @@
-Az út során egy városban találod magad. Ez a város a biztonságosabb karanténzóna széle. A tábor
-ahova el szeretnétek jutni a zónán kívül van. Döntést kell hoznod.
+Az ut soran egy varosban talalod magad. Ez a varos a biztonsagosabb karantenzona szele. A tabor
+ahova el szeretnetek jutni a zonan kivul van. Dontest kell hoznod.
 
-Kilépsz a karantén zónán kívülre?
+Kilepsz a karanten zonan kivulre?
