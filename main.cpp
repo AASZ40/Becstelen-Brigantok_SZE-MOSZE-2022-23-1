@@ -2,284 +2,308 @@
 #include <string>
 #include <fstream>
 
+
 using namespace std;
 
-/*class Kiir {
+class Fajlkezeles {
 public:
 
-    void StoryOut() {
-        string story1(Fajlkezeles::file1)
-    }
+	string line;
 
-    void EventOut() {
+	void file1() {
+		ifstream file("bevezeto.txt");
+		if (file.is_open()) {
+			while (getline(file, line)) {
+				cout << line << '\n';
+			}
 
-    }
+			file.close();
+		}
+		else {
+			cout << "A fajlt nem sikerult megnyitni, kerem, ellenorizze a txt fajlok helyet! " << endl;
+		}
+	}
 
+	void file2() {
+		ifstream file("terulet1.txt");
+		if (file.is_open()) {
+			while (getline(file, line)) {
+				cout << line << '\n';
+			}
 
+			file.close();
+		}
+		else {
+			cout << "A fajlt nem sikerult megnyitni, kerem, ellenorizze a txt fajlok helyet! " << endl;
+		}
+	}
 
-};*/
+	void file3() {
+		ifstream file("tabor1.txt");
+		if (file.is_open()) {
+			while (getline(file, line)) {
+				cout << line << '\n';
+			}
 
-class Fajlkezeles{
+			file.close();
+		}
+		else {
+			cout << "A fajlt nem sikerult megnyitni, kerem, ellenorizze a txt fajlok helyet! " << endl;
+		}
+	}
+
+	void file4() {
+		ifstream file("elhagyatott_epulet1.txt");
+		if (file.is_open()) {
+			while (getline(file, line)) {
+				cout << line << '\n';
+			}
+
+			file.close();
+		}
+		else {
+			cout << "A fajlt nem sikerult megnyitni, kerem, ellenorizze a txt fajlok helyet! " << endl;
+		}
+	}
+
+	void file5() {
+		ifstream file("sator1.txt");
+		if (file.is_open()) {
+			while (getline(file, line)) {
+				cout << line << '\n';
+			}
+
+			file.close();
+		}
+		else {
+			cout << "A fajlt nem sikerult megnyitni, kerem, ellenorizze a txt fajlok helyet! " << endl;
+		}
+	}
+
+	void file6() {
+		ifstream file("orszagut1.txt");
+		if (file.is_open()) {
+			while (getline(file, line)) {
+				cout << line << '\n';
+			}
+
+			file.close();
+		}
+		else {
+			cout << "A fajlt nem sikerult megnyitni, kerem, ellenorizze a txt fajlok helyet! " << endl;
+		}
+	}
+
+	void file7() {
+		ifstream file("hatso_kijarat.txt");
+		if (file.is_open()) {
+			while (getline(file, line)) {
+				cout << line << '\n';
+			}
+
+			file.close();
+		}
+		else {
+			cout << "A fajlt nem sikerult megnyitni, kerem, ellenorizze a txt fajlok helyet! " << endl;
+		}
+	}
+
+	void file8() {
+		ifstream file("wc.txt");
+		if (file.is_open()) {
+			while (getline(file, line)) {
+				cout << line << '\n';
+			}
+
+			file.close();
+		}
+		else {
+			cout << "A fajlt nem sikerult megnyitni, kerem, ellenorizze a txt fajlok helyet! " << endl;
+		}
+	}
+};
+
+class Kiir : public Fajlkezeles {
 public:
-    string line;
-    string A = "IGEN";
-    string B = "NEM";
-
-    void file1() {
-        ifstream file1("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/bevezeto.txt");
-        if (file1.is_open()) {
-            while (getline(file1, line)) {
-                cout << line << '\n';
-            }
-
-            file1.close();
-        }
-
-        
-        
-
-    }
-
-    void file2() {
-        ifstream file2("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/terulet1.txt");
-        if (file2.is_open()) {
-            while (getline(file2, line)) {
-                cout << line << '\n';
-            }
 
 
-            file2.close();
-        }
-        
-    }
+	void getStory1() {
+		cout << "------------------------------------" << endl;
+		file1();
+	}
 
-    void file3() {
-        ifstream file3("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/tabor1.txt");
-        if (file3.is_open()) {
-            while (getline(file3, line)) {
-                cout << line << '\n';
-            }
+	void getStory2() {
+		cout << "------------------------------------" << endl;
+		file2();
+	}
 
+	void getStory3() {
+		cout << "------------------------------------" << endl;
+		file3();
+	}
 
-            file3.close();
-        }
-        
-    }
+	void getStory4() {
+		cout << "------------------------------------" << endl;
+		file4();
+	}
 
-    void file4() {
-        ifstream file4("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/elhagyatott_epulet1.txt");
-        if (file4.is_open()) {
-            while (getline(file4, line)) {
-                cout << line << '\n';
-            }
+	void getStory5() {
+		cout << "------------------------------------" << endl;
+		file5();
+	}
 
+	void getStory6() {
+		cout << "------------------------------------" << endl;
+		file6();
+	}
 
-            file4.close();
-        }
-        
-    }
+	void getStory7() {
+		cout << "------------------------------------" << endl;
+		file7();
+	}
 
-    void file5() {
-        ifstream file5("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/sator1.txt");
-        if (file5.is_open()) {
-            while (getline(file5, line)) {
-                cout << line << '\n';
-            }
+	void getStory8() {
+		cout << "------------------------------------" << endl;
+		file8();
+	}
+};
 
+class Dontes : public Kiir {
+public:
 
-            file5.close();
-        }
-        
-    }
+	string vege;
 
-    void file6() {
-        ifstream file6("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/orszagut1.txt");
-        if (file6.is_open()) {
-            while (getline(file6, line)) {
-                cout << line << '\n';
-            }
-
-
-            file6.close();
-        }
-        
-    }
-
-    void file7() {
-        ifstream file7("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/hatso_kijarat.txt");
-        if (file7.is_open()) {
-            while (getline(file7, line)) {
-                cout << line << '\n';
-            }
+	string input;
+	void Input() {
+		cout << "A(igen), B(nem)" << endl;
 
 
-            file7.close();
-        }
-        
-    }
+		getline(cin, input);
 
-    void file8() {
-        ifstream file8("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/wc.txt");
-        if (file8.is_open()) {
-            while (getline(file8, line)) {
-                cout << line << '\n';
-            }
+		cout << endl;
+
+		while (input != "A" && input != "B") {
+
+			cout << "Hibas bevitel, probalja ujra (A vagy B)!" << endl;
+
+			getline(cin, input);
+
+			cout << endl;
+
+		}
+	}
+	
+	void getNextPlace() {
+		
 
 
-            file8.close();
-        }
-        
-    }
+		if (input == "A" && &Kiir::getStory1) {
+			getStory2();
+			Input();
+			if (input == "A" && &Kiir::getStory2) {
+				getStory3();
+				Input();
+				if (input == "A" && &Kiir::getStory3) {
+					getStory5();
+					//Input();
+					cout << "Vege!" << endl;
+
+				}
+				else if (input == "B" && &Kiir::getStory3) {
+					getStory6();
+					cout << "Vege!" << endl;
+
+				}
+			}
+			else if (input == "B" && &Kiir::getStory2) {
+				getStory4();
+				Input();
+				if (input == "A" && &Kiir::getStory4) {
+					getStory7();
+					cout << "Vege!" << endl;
+					//Input();
+
+				}
+				else if (input == "B" && &Kiir::getStory4) {
+					getStory8();
+					cout << "Vege!" << endl;
+				}
+			}
+
+
+		}
+		else if (input == "B" && &Kiir::getStory1) {
+			getStory1();
+			Input();
+
+			/*}
+			else if (input == "A" && &Fajlkezeles::file2) {
+				getStory3();
+
+			}
+			else if (input == "B" && &Fajlkezeles::file2) {
+				getStory4();
+
+			}
+			else if (input == "A" && &Fajlkezeles::file3) {
+				getStory5();
+
+			}
+			else if (input == "B" && &Fajlkezeles::file3) {
+				getStory6();
+				gameover;
+
+			}
+			else if (input == "A" && &Fajlkezeles::file4) {
+				getStory7();
+
+			}
+			else if (input == "B" && &Fajlkezeles::file4) {
+				getStory8();
+				gameover;
+
+			}
+			else if (input == "A" && &Fajlkezeles::file5) {
+				end;
+			}
+			else if (input == "B" && &Fajlkezeles::file5) {
+				end;
+			}
+			else if (input == "A" && &Fajlkezeles::file7) {
+				end;
+			}
+			else if (input == "B" && &Fajlkezeles::file7) {
+				end;
+			}
+			*/
+		}
+	};
 
 };
 
-
-
-
-
-class Dontes : public Fajlkezeles {
-public:
-
-    void getNextPlace() {
-
-        cout << "A(igen), B(nem)" << endl;
-        string input;
-      
-        getline(cin, input);
-
-        cout << endl;
-
-        while (input != "A" && input != "B") {
-
-            cout << "Hibas bevitel, probalja ujra (A vagy B)!" << endl;
-
-            getline(cin, input);
-
-            cout << endl;
-
-        }
-
-        if (input == "A" && &Fajlkezeles::file1) {
-                return file2();
-
-        }
-        else if (input == "B" && &Fajlkezeles::file1) {
-                return file1();
-        }
-        else if (input == "A" && &Fajlkezeles::file2) {
-                return file3();
-        }
-        else if (input == "B" && &Fajlkezeles::file2) {
-                return file4();
-        }
-        else if (input == "A" && &Fajlkezeles::file3) {
-                return file5();
-        }
-        else if (input == "B" && &Fajlkezeles::file3) {
-                return file6();
-        }
-        else if (input == "A" && &Fajlkezeles::file4) {
-                return file7();
-        }
-        else if (input == "B" && &Fajlkezeles::file4) {
-                return file8();
-        }
-        
-        
-    }
-    
- };
-
 int main() {
-    Fajlkezeles file;
-    Dontes dontes;
-
-    file.file1();
-    dontes.getNextPlace();
-
-    return 0;
-    
-        /*string line;
-        //string dontes;
-        string A = "IGEN";
-        string B = "NEM";
-
-     
-
-        /*
-            ifstream file("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/bevezeto.txt");
-            if (file.is_open()) {
-                while (getline(file, line)) {
-                    cout << line << '\n';
-                }
-
-
-                file.close();
-
-
-            cout << endl << "El akarod kezdeni a jatekot?" << endl;
-
-            string input;
-            getline(cin, input);
-
-            cout << endl;
-
-
-            if (input == "A") {
-                ifstream file("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/terulet1.txt");
-                if (file.is_open()) {
-                    while (getline(file, line)) {
-                        cout << line << '\n';
-                    }
-                    file.close();
-
-                    cout << endl;
-
-                    string input;
-                    getline(cin, input);
-
-                    cout << endl;
-                }
-                else
-                    cout << "Nem nyithato meg a fajl!";
-            }
-
-            else if (input == "B") {
-                ifstream file("C:/c++/mosze_2022_game/Mosze-2022-jatek/Story/bevezeto.txt");
-                if (file.is_open()) {
-                    while (getline(file, line)) {
-                        cout << line << endl;
-                    }
-                    file.close();
-
-                    cout << endl << "El akarod kezdeni a jatekot?" << endl;
-
-                    string input;
-                    getline(cin, input);
-
-                    cout << endl;
-                }
-                else
-                    cout << "Nem nyithato meg a fajl!";
-
-
-            }
-        }
-
-        else {
-            cout << "Nem nyithato meg a fajl! Kerem, ellenorizze a main.cpp fajlban a txt fajlok eleresi utjat!";
-
-
-        }*/
-
-        
-
-       
+	
+	string nev;
+	Kiir ir;
+	Dontes dont;
+	bool ending = "Vege!";
+	
 
 
 
+	cout << "Adja meg a nevet" << endl;
 
-    }
+	cin >> nev;
+
+	ir.getStory1();
+	do
+	{
+		dont.Input();
+		dont.getNextPlace();
+	} while (!ending);
 
 
 
+	
+	return 0;
+}
